@@ -226,12 +226,14 @@
     <button alt="" onmousedown="myAudioFunction('Tumbi')" class="btn">tumba</button>
     
     <button alt="" onmousedown="myAudioFunction('Daf')" class="btn">Duff</button>
-    <button alt="" onmousedown="myAudioFunction('dhol')" class="btn">Tasha</button>
+    <button alt="" onmousedown="myAudioFunction('dhol')"ondblclick="myMi()" class="btn">Tasha</button>
 </div>
 </div>
     <script type="text/javascript">
         var audio = new Audio();
-
+function myMi() {
+            audio.pause()
+        }
         function myAudioFunction(letter) {
             audio.pause()
             audio = new Audio(letter + '.mp3 ');
